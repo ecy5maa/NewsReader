@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidtutorialpoint.androidviewpagerexample.com.androidtutorialpoint.newsreader.CountreySelection">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/tv_gfhg"
+        android:layout_above="@+id/ccp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select Country"/>
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        app:defaultCode="852"
+        app:showFullName="true"
+        android:gravity="center" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="GO"
+        android:id="@+id/btn_go"
+        android:textColor="#ffffff"
+        android:background="@drawable/oval_shape"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccp"/>
+</RelativeLayout>
